@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400i,900");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /*color: #28a745;*/
+
+}
+a {
+  color: #28a745;
+}
+
+#green {
+  color: #28a745;
+}
+
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+
+}
+
+.grid-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+@media (min-width: 52em) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+}
+
+.our-team {
+  /*background: black;*/
+  background: url(../images/robot00.png) ;
+  padding: 5em 0;
+  color: rgba(248, 248, 248, 0.6);
+
+}
+
+.team-description {
+  grid-column: span 2;
+}
+@media (min-width: 52em) {
+  .team-description {
+    grid-column: auto;
+    grid-row: span 2;
+    align-self: center;
+  }
+}
+
+.team-title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 4rem;
+  color: #28a745;
+  margin-top: 0;
+  line-height: 1;
+  letter-spacing: 5px;
+}
+.team-title span {
+  display: block;
+  font-weight: 900;
+}
+
+.team-member {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.team-member img {
+  width: 100%;
+  display: block;
+}
+.team-member figcaption {
+  position: absolute;
+  top: 1em;
+  bottom: 1em;
+  right: 1em;
+  left: 1em;
+  background: rgba(197, 183, 183, 0.48);
+  color: #0b2027;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 300ms;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.team-member:hover figcaption {
+  opacity: 1;
+}
+.team-member .name {
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+
+.backtotop {
+  text-align: center;
+  position: center;
+}
+
+
+.button.-dark {
+  color: var(--color-snow);
+  background: var(--color-dark);
+
+
+  &:focus {
+    outline: 1px dotted white;
+    outline-offset: -4px;
+  }
+}
+
+
+
+ .navbar {
+      /*background-color: #750505;*/
+      background: url(../images/robot0.jpg);
+       color: #28a745;
+
+    }
+
+    #navbar {
+      color: #28a745;
+    }
+
+#body {
+  background: url(../images/robot0.jpg);
+}
+
+
+.section {
+  background: url(../images/rmbackground.jpg);
+}
+
+
+q {
+  color: #770404;
+  font-weight: bold;
+
+}
